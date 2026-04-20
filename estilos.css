@@ -1,0 +1,33 @@
+.category-card {
+    transition: transform 0.2s;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.element-btn {
+    margin: 2px;
+    font-size: 0.85rem;
+}
+
+.search-box {
+    position: sticky;
+    top: 10px;
+    z-index: 1000;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.badge-html5 {
+    background-color: #e34c26;
+}

@@ -1,46 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-mx">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML-Components</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .category-card {
-            transition: transform 0.2s;
-            height: 100%;
-        }
-
-        .category-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .element-btn {
-            margin: 2px;
-            font-size: 0.85rem;
-        }
-
-        .search-box {
-            position: sticky;
-            top: 10px;
-            z-index: 1000;
-            background: white;
-            padding: 10px 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        pre {
-            background: #f8f9fa;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-
-        .badge-html5 {
-            background-color: #e34c26;
-        }
-    </style>
+    <link href="estilos.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
@@ -49,21 +15,18 @@
             <h1 class="display-4"><span class="badge badge-html5">HTML</span> Components</h1>
             <p class="lead">Todos los componentes de HTML en un solo lugar</p>
             <button class="btn btn-sm badge badge-html5 element-btn" data-bs-toggle="modal"
-                data-bs-target="#modal1">Informacion de contacto</button>
+                data-bs-target="#modal1">Información de contacto</button>
 
             <div class="modal fade" id="modal1" tabindex="-1">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header badge badge-html5 text-white">
-                            <h5 class="modal-title">Informacion de contacto</h5>
+                            <h5 class="modal-title">Información de contacto</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">
-                            <p>Este proyecto tiene se encuentra bajo licencia de Copyleft, sientete libre de editar,
-                                corregir o redistribuir este proyecto. Solo recuerda darle la atribucion necesaria en el
-                                manifiesto y en el "Readme.md", si tienes dudas o requieres mas informacion sobre el
-                                proyecto, puedes escribirnos al +52 722 533 2472 o busca mi perfil de Github como
-                                @Lott-Campuzano.
+                            <p>Este proyecto es open source, sientete libre de editar, corregir o redistribuir este proyecto.
+                                Solo recuerda darle la atribucion necesaria en el manifiesto y en el "Readme.md".
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -587,41 +550,6 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalHead" tabindex="-1">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">&lt;head&gt;</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Contiene metadatos/información sobre el documento, como título, enlaces a hojas de estilo,
-                        scripts, etc.</p>
-                    <h6>Sintaxis:</h6>
-                    <pre><code>&lt;head&gt;...&lt;/head&gt;</code></pre>
-                    <h6>Atributos:</h6>
-                    <ul>
-                        <li>No tiene atributos específicos, pero puede contener varios elementos hijos</li>
-                    </ul>
-                    <h6>Ejemplo:</h6>
-                    <pre><code>&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Mi Página&lt;/title&gt;
-    &lt;link rel="stylesheet" href="estilos.css"&gt;
-    &lt;script src="script.js"&gt;&lt;/script&gt;
-&lt;/head&gt;</code></pre>
-                    <div class="alert alert-info mt-3">
-                        <strong>Nota:</strong> El contenido del &lt;head&gt; no se muestra directamente en la página,
-                        pero es esencial para su funcionamiento y SEO.
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Modal para <body> -->
     <div class="modal fade" id="modalBody" tabindex="-1">
@@ -789,8 +717,8 @@
     &lt;/style&gt;</code></pre>
                     <h6>Atributos:</h6>
                     <ul>
-                        <li><strong>type</strong>: Especifica el tipo MIME del contenido (por defecto "text/css").</li>
-                        <li><strong>media</strong>: Especifica el medio para el que están diseñados los estilos (ej.
+                        <li><strong>Type</strong>: Especifica el tipo MIME del contenido (por defecto "text/css").</li>
+                        <li><strong>Media</strong>: Especifica el medio para el que están diseñados los estilos (ej.
                             "screen").</li>
                     </ul>
                     <h6>Ejemplo:</h6>
@@ -4435,7 +4363,7 @@
     <footer>
         <p>
             <center>
-                ©Hecho con 💓 por Lott-Campuzano
+                Hecho con <3 por Lott-Campuzano
             </center>
         </p>
     </footer>
